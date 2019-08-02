@@ -30,7 +30,6 @@ $(".submit").on("click", function() {
 })
 
 $(".food").on("click", function() {
-    alert("Click")
     var food = $(this).attr("data-food");
 
     console.log(food);
