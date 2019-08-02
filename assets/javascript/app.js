@@ -18,11 +18,14 @@ ButtonMaker();
 $(".submit").on("click", function() {
 
     console.log(topics)
-    var foodInput = $(".foodInfo").val();
+    // the bug probably occurs when I freaking add the new food to the array D:
+    var foodInput = $(".foodInfo").val(); 
     console.log(foodInput);
     topics.push(foodInput);
     console.log(topics);
+
     $("#foodButtons").empty();
+
     ButtonMaker();
 })
 
